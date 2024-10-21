@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        nav a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+    <!--NAVIGATION BAR-->
+    <header>
+        <h1>Saumya</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </nav>
+    </header>
+    <marquee behavior="alternate" direction="right" scrollamount="10"><!--VIDEO TAG-->
+        <video src="images/krishna.mp4" height="500" width="250" controls autoplay muted loop></video>
+        <video controls width="250" height="500">
+            <source src="images/krishna.mp4" type="video/mp4">
+
+        </video>
+        <!-- AUDIO TAG-->
+        <audio src="images/audio.mp3" type="audio/mp3" controls></audio>
+
+        <!-- HTML TABLE-->
+        <table border="2px solid" cellpadding="20" cellspacing="20">
+            <caption>Student</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan=>Saumya</td>
+                    <td>20</td>
+                    <td>BCA</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="2">Chandu</td>
+                    <td rowspan="2">20</td>
+                    <td>BCA</td>
+                </tr>
+                <tr>
+                    <td>Chandu</td>
+                    <td>20</td>
+                    <td>BCA</td>
+                </tr>
+                <tr>
+                    <td>Chandu</td>
+                    <td>20</td>
+                    <td>BCA</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Students: 2</td>
+                    <td rowspan="3">total student : 1</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <address>farah
+            mathura
+        </address>
+
+        <dialog open="">
+            hello world
+        </dialog>
+        <pre>
+        sjsjsjs
+        sjsjsjjs    sjsjsjj
+      </pre>
+  <!-- Detail Tag-->
+        <details>
+            <summary>this is a summary</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, optio.</p>
+        </details>
+    </marquee>
+   <!-- MARQUEE TAG-->
+    <marquee behaviour="slide" scrollamount="100" bgcolor="red" color="white" direction="left"><img
+            src="../html/images/hacker.jpg" title="hacker" alt="hacker" width="500px" height="500px"></marquee>
+</body>
+
+</html>

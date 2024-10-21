@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: grid;
+
+    gap: 10px;
+}
+
+.grid-cols {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.card1 {
+    background-image: linear-gradient(to bottom,#326eef,#d734cd);
+    height: 50px;
+    width: 100px;
+    grid-column: span 3;
+    width: 100vw;
+}
+
+.card2 {
+    background-image: linear-gradient(to right, #326eef,#d734cd);
+    /*background: radial-gradient(#e66465, #9198e5);*/
+    height: 50vh;
+    width: 100vw;
+    grid-column: span 3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card3 {
+    background-color: black;
+    height: 25vw;
+    width: 100vw;
+    color: white;
+    grid-column: span 3;
+}
+
+H1{
+    border: 2px solid black;
+    box-shadow: 3px 3px red  -1em 0 .4em olive;
+    text-shadow:3px 3px red, -1em 0 .4em olive ;
+}   
+p{
+    float: right;
+}

@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.card1 {
+    background: repeating-linear-gradient(45deg, #3f87a6, #ebf8e1 15%, #f69d3c 20%);
+    height: 50px;
+    width: 100vw;  /* Takes the full width of the viewport */
+    grid-column: span 3;
+}
+
+#card {
+    background: repeating-conic-gradient(red, orange 20%, yellow 25%, green 30%, blue 45%);
+    height: 200px;
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(1deg); /* Rotates the element */
+}
+
+#card3 {
+    background: repeating-linear-gradient(to bottom right, #3f87a6, #ebf8e1 15%, #f69d3c 20%);
+    height: 200px;
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1); /* Default size, adjust the value if needed */
+    
+}
+
+.card4 {
+    height: 100px;
+    width: 50px;
+    background-color: red;
+    transition: all 5s ease-in 0.5s;
+    
+    /* Animation Properties */
+    animation-name: box;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  
+    transform-origin: center; /* Center of the element */
+}
+
+.card4:hover {
+    background-color: blue;
+    width: 100px;
+}
+
+/* Keyframes for Animation */
+@keyframes box {
+    0% { 
+        transform: rotate(0deg); /* Starting point, no rotation */
+    }
+    10% {
+        background-color: black;
+    }
+    25% {
+        transform: rotate(90deg) translate(50px, 50px); /* Rotate 90 degrees and translate */
+    }
+    40% { 
+        background-color: blue;
+    }
+    50% { 
+        transform: rotate(180deg); /* Rotate 180 degrees */
+    }
+    75% {
+        transform: rotate(270deg) scaleY(50%); /* Rotate 270 degrees and scale Y */
+    }
+    100% { 
+        transform: rotate(360deg); /* Full rotation */
+    }
+}

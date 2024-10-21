@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./images/hacker.jpg">
+</head>
+
+<body>
+    <!--HTML LIST-->
+    <h1>LIST</h1>
+    <ul type="circle">
+        unordered list is by default disc type
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+        <li>papapya</li>
+        <li>pienapple</li>
+    </ul>
+    <ul type="disc">
+        unordered list is by default disc type
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+        <li>papapya</li>
+        <li>pienapple</li>
+    </ul>
+    <ul type="square">
+        unordered list is by default disc type
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+        <li>papapya</li>
+        <li>pienapple</li>
+    </ul>
+    <ul type="none">
+        unordered list is by default disc type
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+        <li>papapya</li>
+        <li>pienapple</li>
+    </ul>
+
+    ordered list is by default number type
+    <ol type="a">
+        <li>tea</li>
+        <li>coffee</li>
+        <li>snacks</li>
+    </ol>
+    <ol type="A" start="1" reversed="true"><!-- only numeric value is passing through start attribute-->
+        <li>tea</li>
+        <li>coffee</li>
+        <li>snacks</li>
+    </ol>
+    <ol type="I" start="3">
+        <li>tea</li>
+        <li>coffee</li>
+        <li>snacks</li>
+    </ol>
+    <ol type="i" start="9">
+        <li>tea</li>
+        <li>coffee</li>
+        <li>snacks</li>
+    </ol>
+    <ol type="1" start="6">
+        <li>tea</li>
+        <li>coffee</li>
+        <li>snacks</li>
+    </ol>
+
+    <!-- HTML FORMS-->
+    <h1>FORMS</h1>
+    <form class="form">
+        <label for="name">Name:</label><input type="text" placeholder="name">
+        <br>
+        <label for="number">Number:</label><input type="number" placeholder="number">
+        <ul>
+            <li> <label for="">Radio</label> <input type="radio" name="xyz"></li>
+            <li> <label for="">Radio</label> <input type="radio" name="xyz"></li>
+            <li> <label for="">Radio</label> <input type="radio" name="xyz"></li>
+        </ul>
+
+        <label for="">Email:</label> <input type="email"><br>
+        <label for="">Date:</label> <input type="date"><br>
+        <label for="">Date:</label> <input type="datetime" name="" id=""><br>
+        <label for="">Date-time:</label> <input type="datetime-local"><br>
+        <ul>
+            <li><label for="">Checkbox:</label><input type="checkbox"></li>
+            <li><label for="">Checkbox:</label><input type="checkbox"></li>
+            <li><label for="">Checkbox:</label><input type="checkbox"></li>
+        </ul> <br>
+        <label for="">password:</label><input type="password" required><br>
+        <label for="">URL:</label><input type="url"><br>
+        <label for="">File-path</label><input type="file"><br>
+        <input type="text"><br>
+        <select name="dropdown" id="">
+            <option value="Tea">Tea</option>
+            <option value="coffee">Coffee</option>
+            <option value="milk">milk</option>
+        </select><br>
+        <input type="reset">
+        <button id="submit" >Submit</button>
+
+    </form>
+
+    <h1>iFRame</h1>
+    <iframe src="https://hcst.edu.in/" width="300" height="300"></iframe>
+    <script>
+       
+        document.getElementById("submit").addEventListener("click",(e)=>{
+
+            alert("Form should not submit.");  // Shows an alert
+        });
+
+    </script>
+</body>
+
+</html>

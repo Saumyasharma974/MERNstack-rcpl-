@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-style Curve and Gradient</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: #111; /* Netflix-like background */
+        }
+
+        /* Semi-circular curved section */
+        .curve-container {
+            position: relative;
+            width: 100%;
+            height: 200px; /* Adjust height for the desired curve size */
+            background-color: black;
+            border-bottom-left-radius: 50% 100%;
+            border-bottom-right-radius: 50% 100%;
+            z-index: 1;
+        }
+
+        /* Gradient overlay on top of the curve */
+        .curve-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+            border-bottom-left-radius: 50% 100%;
+            border-bottom-right-radius: 50% 100%;
+            z-index: 2;
+        }
+
+        /* Content section that comes after the curve */
+        .content {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Example Footer */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Semi-circular curved section -->
+    <div class="curve-container"></div>
+
+    <!-- Main content below the curve -->
+    <div class="content">
+        <h1>Welcome to Netflix-style UI</h1>
+        <p>This is an example of a circular shape at the top of the page, similar to Netflix's user interface.</p>
+    </div>
+
+    <!-- Footer content -->
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
+</body>
+</html>
